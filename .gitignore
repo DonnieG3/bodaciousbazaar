@@ -1,8 +1,7 @@
 .DS_Store
 .jekyll-site/
 .jekyll-cache/
-public_html/.DS_Store
-public_html/.jekyll-cache/
-public_html/.easyssl_backup/
-public_html/.ftpquota
+.easyssl_backup/
+.ftpquota
+public_html/
 public_html.zip
