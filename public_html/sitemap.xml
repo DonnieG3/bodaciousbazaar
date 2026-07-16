@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+    <loc>https://www.bodaciousbazaar.com/fall/</loc>
+	  <lastmod>2018-10-05</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://www.bodaciousbazaar.com/spring/</loc>
+	  <lastmod>2023-03-28</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+</url>
+
+<url>
+    <loc>https://www.bodaciousbazaar.com/about.html</loc>
+	  <lastmod>2018-10-05</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>https://www.bodaciousbazaar.com/photos.html</loc>
+	  <lastmod>2018-10-05</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.bodaciousbazaar.com/vendors.html</loc>
+	  <lastmod>2018-10-05</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://www.bodaciousbazaar.com/travel.html</loc>
+	  <lastmod>2018-10-05</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+</url>
+
+</urlset>
+
