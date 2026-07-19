@@ -13,6 +13,8 @@ $(document).ready(function(){
 
 	})(jQuery);
 
-	$('[data-footer]').load('/footer.html');
+	$('[data-footer]').load('/footer.html', function() {
+		$('[data-current-year]').text(new Date().getFullYear());
+	});
 
 });
