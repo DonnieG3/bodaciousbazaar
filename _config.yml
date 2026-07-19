@@ -1,0 +1,14 @@
+title: Bodacious Bazaar
+description: 3 Day Shopping Extravaganza in Hampton, Virginia
+url: "https://bodaciousbazaar.com"
+baseurl: ""
+timezone: America/New_York
+
+include:
+  - .htaccess
+
+exclude:
+  - README.md
+  - public_html.zip
+  - .jekyll-cache/
+  - .jekyll-site/
