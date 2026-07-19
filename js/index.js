@@ -13,4 +13,6 @@ $(document).ready(function(){
 
 	})(jQuery);
 
+	$('[data-footer]').load('/footer.html');
+
 });

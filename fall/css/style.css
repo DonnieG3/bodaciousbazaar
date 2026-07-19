@@ -295,7 +295,7 @@ h2 {
 	margin-top:10px;
 	background-color: #87BC6C;
 	width:100%;
-	max-height:450px;
+	box-sizing: border-box;
 	z-index:100;
 	-webkit-column-count: 2;  -webkit-column-gap: 15px;
     -moz-column-count: 2;     -moz-column-gap: 15px;
@@ -313,7 +313,10 @@ h2 {
 .footer p {
 	color: #000;
 	text-shadow: 0 0 ;
-	
+	width: auto;
+	max-width: 450px;
+	font-size: 11px;
+	padding-right: 15px;
 }
 
 /* HEADER */
