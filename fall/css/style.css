@@ -57,6 +57,176 @@ a {
   background-repeat:no-repeat;
 }
 
+.fall-home {
+  background: #fff;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  background: #00900B;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.74)
+  );
+  pointer-events: none;
+}
+
+.hero__overlay {
+  position: relative;
+  z-index: 2;
+  width: min(92vw, 980px);
+  padding: 80px 24px 72px;
+  text-align: center;
+}
+
+.hero__logo-link {
+  display: inline-block;
+}
+
+.hero__logo {
+  display: block;
+  width: min(82vw, 820px);
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 3px 12px rgba(255, 255, 255, 0.95));
+}
+
+.hero h1 {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  color: #00900B;
+  font-size: clamp(2.4em, 6vw, 5em);
+  line-height: 1;
+  text-align: center;
+}
+
+.hero__location {
+  width: auto;
+  max-width: none;
+  margin: 14px 0 0;
+  padding: 0;
+  color: #111;
+  font-size: clamp(1.2em, 2.5vw, 2em);
+  font-weight: 700;
+  text-align: center;
+}
+
+.hp-section {
+  width: 100%;
+  padding: 58px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 144, 11, 0.22);
+  clear: both;
+}
+
+.hp-section:nth-of-type(odd) {
+  background: #f1f8ee;
+}
+
+.hp-section:nth-of-type(even) {
+  background: #fff;
+}
+
+.fall-home .hp-section--tickets,
+.fall-home .hp-section--redcross {
+  background: #fff6f3;
+}
+
+.hp-section__inner {
+  width: min(90vw, 980px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hp-section h2 {
+  margin-bottom: 16px;
+}
+
+.hp-section h2 i {
+  margin-right: 8px;
+}
+
+.hp-section p {
+  width: auto;
+  max-width: 760px;
+  margin: 0 auto 22px;
+  padding: 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.hp-section .btn-green {
+  display: inline-block;
+}
+
+.hp-section--map {
+  padding: 0;
+  background: #fff;
+}
+
+.hp-section--map .hp-section__inner {
+  width: 100%;
+  max-width: none;
+}
+
+.hp-section--map iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: 0;
+}
+
+.schedule-table {
+  width: min(100%, 660px);
+  margin: 8px auto 0;
+  border-collapse: collapse;
+  font-size: 1.25em;
+  text-align: left;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(0, 144, 11, 0.25);
+}
+
+.schedule-table th {
+  color: #00900B;
+  font-family: 'Lobster', cursive;
+  font-size: 1.35em;
+}
+
+.fall-logo-footer {
+  padding: 34px 20px 22px;
+  text-align: center;
+}
+
+.fall-logo-footer img {
+  width: min(50vw, 345px);
+}
+
 .two-col-page {
 	-webkit-column-count: 2;  -webkit-column-gap: 15px;
     -moz-column-count: 2;     -moz-column-gap: 15px;
@@ -209,6 +379,51 @@ h2 {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
+
+	.hero {
+	min-height: calc(100vh - 75px);
+	}
+
+	.hero__overlay {
+	padding: 56px 18px 48px;
+	}
+
+	.hero__logo {
+	width: min(88vw, 640px);
+	}
+
+	.hero h1 {
+	font-size: 2.25em;
+	}
+
+	.hero__location {
+	font-size: 1.2em;
+	}
+
+	.hp-section {
+	padding: 42px 16px;
+	}
+
+	.hp-section p {
+	font-size: 1.1em;
+	}
+
+	.schedule-table {
+	font-size: 1em;
+	}
+
+	.schedule-table th,
+	.schedule-table td {
+	padding: 12px 8px;
+	}
+
+	.hp-section--map {
+	padding: 0;
+	}
+
+	.hp-section--map iframe {
+	height: 360px;
+	}
  
 .hp-boxes {
 	width: 80%;
