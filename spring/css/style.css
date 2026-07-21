@@ -546,7 +546,7 @@ h2 {
     width: 50px;
     height: 75px;
     cursor: pointer;
-	background-color: #0063D1;
+	background-color: #0073FF;
   }
   .header__icon:after {
     content: '';
@@ -569,7 +569,7 @@ h2 {
     left: 0;
     top: 0;
     bottom: 0;
-	background-color: #0063D1;
+	background-color: #0073FF;
     /*background-color: #3849a2;
     /*    overflow-y: scroll;
         -webkit-overflow-scrolling: touch;*/
