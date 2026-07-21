@@ -166,6 +166,10 @@ h2 a {
 	display:none;
 }
 
+.mobile-site-title {
+	display:none;
+}
+
 /*
 .header__logo {
   padding: 10px 5px 5px 5px;
@@ -220,6 +224,12 @@ h2 a {
     left: 0;
     bottom: 0;
     padding-top: 0;
+    background-image:
+	  linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+	  url( ../images/ribbon-red.gif);
+	background-position: top left, top left;
+	background-size: cover, contain;
+	background-repeat: no-repeat, no-repeat;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
@@ -241,10 +251,33 @@ h2 a {
   .header {
     position: static;
 	z-index:4;
-	background-image:url( ../images/bobaz-logo-text.png);
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:contain;
+	background-color:#555555;
+	background-image:none;
+  }
+
+  .mobile-site-title {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 0;
+	display: block;
+	height: 75px;
+	line-height: 75px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.65em;
+	color: #000;
+	background-color: transparent;
+	text-align: center;
+	text-shadow:
+	  -1px -1px 0 #fff,
+	  1px -1px 0 #fff,
+	  -1px 1px 0 #fff,
+	  1px 1px 0 #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
   }
   
   .header__logo {
@@ -262,7 +295,7 @@ h2 a {
     width: 50px;
     height: 75px;
     cursor: pointer;
-	background-color: #333;
+	background-color: #555555;
   }
   .header__icon:after {
     content: '';
