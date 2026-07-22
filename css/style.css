@@ -301,15 +301,19 @@ h2 a {
 	box-sizing: border-box;
 	padding: 0 10px;
 	font-family: 'Lobster', cursive;
-	font-size: 1.65em;
+	font-size: 2.2em;
 	color: #000;
 	background-color: transparent;
 	text-align: center;
 	text-shadow:
-	  -1px -1px 0 #fff,
-	  1px -1px 0 #fff,
-	  -1px 1px 0 #fff,
-	  1px 1px 0 #fff;
+	  -2px -2px 0 #fff,
+	  0 -2px 0 #fff,
+	  2px -2px 0 #fff,
+	  -2px 0 0 #fff,
+	  2px 0 0 #fff,
+	  -2px 2px 0 #fff,
+	  0 2px 0 #fff,
+	  2px 2px 0 #fff;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
