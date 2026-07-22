@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	})(jQuery);
 
-	$('[data-footer]').load('/footer.html', function() {
+	$('[data-footer]').load('/footer.html?v=20260722-footer', function() {
 		$('[data-current-year]').text(new Date().getFullYear());
 		updateMobileTitleFooter();
 	});
