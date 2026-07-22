@@ -168,6 +168,14 @@ a {
 	line-height: 1.45;
 }
 
+.travel-intro {
+	margin-bottom: 0.25rem;
+}
+
+.travel-options {
+	margin-top: 0.25rem;
+}
+
 .image-gallery p {
 	width: 100%;
 	max-width: none;
@@ -766,6 +774,14 @@ body.photo-lightbox-open {
 	-webkit-column-count: 1;  -webkit-column-gap: 0px;
     -moz-column-count: 1;     -moz-column-gap: 0px;
     column-count: 1;          column-gap: 0px;
+  }
+
+  .travel-intro {
+    margin-bottom: 0.9rem;
+  }
+
+  .travel-options {
+    margin-top: 0.75rem;
   }
 }
 

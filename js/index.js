@@ -42,6 +42,31 @@ $(document).ready(function(){
 
 	var $photoLightbox = $('#photo-lightbox');
 	var $photoLightboxImage = $('.photo-lightbox__image');
+	var $galleryPhotos = $('.gallery-photo');
+	var currentPhotoIndex = 0;
+	var touchStartX = 0;
+	var touchStartY = 0;
+
+	function showPhotoAt(index) {
+		var photoCount = $galleryPhotos.length;
+
+		if (!photoCount) {
+			return;
+		}
+
+		currentPhotoIndex = (index + photoCount) % photoCount;
+
+		var $image = $galleryPhotos.eq(currentPhotoIndex).find('img');
+		$photoLightboxImage.attr('src', $image.attr('src')).attr('alt', $image.attr('alt'));
+	}
+
+	function showNextPhoto() {
+		showPhotoAt(currentPhotoIndex + 1);
+	}
+
+	function showPreviousPhoto() {
+		showPhotoAt(currentPhotoIndex - 1);
+	}
 
 	function closePhotoLightbox() {
 		$photoLightbox.removeClass('is-open').attr('aria-hidden', 'true');
@@ -50,9 +75,9 @@ $(document).ready(function(){
 	}
 
 	$('.gallery-photo').on('click', function() {
-		var $image = $(this).find('img');
+		currentPhotoIndex = $galleryPhotos.index(this);
 
-		$photoLightboxImage.attr('src', $image.attr('src')).attr('alt', $image.attr('alt'));
+		showPhotoAt(currentPhotoIndex);
 		$photoLightbox.addClass('is-open').attr('aria-hidden', 'false');
 		$('body').addClass('photo-lightbox-open');
 		$('.photo-lightbox__close').focus();
@@ -69,6 +94,35 @@ $(document).ready(function(){
 	$(document).on('keyup', function(e) {
 		if (e.key === 'Escape' && $photoLightbox.hasClass('is-open')) {
 			closePhotoLightbox();
+		}
+		if (e.key === 'ArrowRight' && $photoLightbox.hasClass('is-open')) {
+			showNextPhoto();
+		}
+		if (e.key === 'ArrowLeft' && $photoLightbox.hasClass('is-open')) {
+			showPreviousPhoto();
+		}
+	});
+
+	$photoLightbox.on('touchstart', function(e) {
+		var touch = e.originalEvent.touches[0];
+
+		touchStartX = touch.clientX;
+		touchStartY = touch.clientY;
+	});
+
+	$photoLightbox.on('touchend', function(e) {
+		var touch = e.originalEvent.changedTouches[0];
+		var deltaX = touch.clientX - touchStartX;
+		var deltaY = touch.clientY - touchStartY;
+
+		if (Math.abs(deltaX) < 50 || Math.abs(deltaX) < Math.abs(deltaY)) {
+			return;
+		}
+
+		if (deltaX < 0) {
+			showNextPhoto();
+		} else {
+			showPreviousPhoto();
 		}
 	});
 
