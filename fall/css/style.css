@@ -552,13 +552,19 @@ h2 {
 
   @media only screen and (max-width: 380px) {
 	.mobile-site-title {
-	  font-size: 1.95em;
+	  font-size: 0;
+	}
+
+	.mobile-site-title::before {
+	  content: "BoBaz";
+	  font-size: 2.2rem;
+	  line-height: 1;
 	}
   }
 
   @media only screen and (max-width: 330px) {
-	.mobile-site-title {
-	  font-size: 1.75em;
+	.mobile-site-title::before {
+	  font-size: 2rem;
 	}
   }
 
