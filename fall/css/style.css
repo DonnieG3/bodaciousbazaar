@@ -522,11 +522,13 @@ h2 {
 	top: 0;
 	left: 50px;
 	right: 0;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 75px;
-	line-height: 75px;
+	line-height: 1;
 	box-sizing: border-box;
-	padding: 0 10px;
+	padding: 0 6px;
 	font-family: 'Lobster', cursive;
 	font-size: 2.2em;
 	color: #000;
@@ -541,12 +543,23 @@ h2 {
 	  -2px 2px 0 #fff,
 	  0 2px 0 #fff,
 	  2px 2px 0 #fff;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	white-space: normal;
+	overflow: visible;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  @media only screen and (max-width: 380px) {
+	.mobile-site-title {
+	  font-size: 1.95em;
+	}
+  }
+
+  @media only screen and (max-width: 330px) {
+	.mobile-site-title {
+	  font-size: 1.75em;
+	}
   }
 
   .show-mobile-title .mobile-site-title {
