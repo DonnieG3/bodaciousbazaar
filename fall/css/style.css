@@ -122,6 +122,10 @@ a {
   text-align: center;
 }
 
+.hero-date-short {
+  display: none;
+}
+
 .hero__location {
   width: auto;
   max-width: none;
@@ -414,6 +418,14 @@ h2 {
 	font-size: 2.25em;
 	}
 
+	.hero-date-full {
+	display: none;
+	}
+
+	.hero-date-short {
+	display: inline;
+	}
+
 	.hero__location {
 	font-size: 1.2em;
 	}
@@ -550,7 +562,7 @@ h2 {
 	transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 480px) {
 	.mobile-site-title {
 	  font-size: 0;
 	}
