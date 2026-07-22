@@ -40,4 +40,36 @@ $(document).ready(function(){
 	$(window).on('resize', updateMobileTitleFooter);
 	updateMobileTitleFooter();
 
+	var $photoLightbox = $('#photo-lightbox');
+	var $photoLightboxImage = $('.photo-lightbox__image');
+
+	function closePhotoLightbox() {
+		$photoLightbox.removeClass('is-open').attr('aria-hidden', 'true');
+		$photoLightboxImage.attr('src', '').attr('alt', '');
+		$('body').removeClass('photo-lightbox-open');
+	}
+
+	$('.gallery-photo').on('click', function() {
+		var $image = $(this).find('img');
+
+		$photoLightboxImage.attr('src', $image.attr('src')).attr('alt', $image.attr('alt'));
+		$photoLightbox.addClass('is-open').attr('aria-hidden', 'false');
+		$('body').addClass('photo-lightbox-open');
+		$('.photo-lightbox__close').focus();
+	});
+
+	$('.photo-lightbox__close').on('click', closePhotoLightbox);
+
+	$photoLightbox.on('click', function(e) {
+		if (e.target === this) {
+			closePhotoLightbox();
+		}
+	});
+
+	$(document).on('keyup', function(e) {
+		if (e.key === 'Escape' && $photoLightbox.hasClass('is-open')) {
+			closePhotoLightbox();
+		}
+	});
+
 });
