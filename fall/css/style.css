@@ -181,6 +181,29 @@ a {
   text-shadow: none;
 }
 
+.ticket-list {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.ticket-list th,
+.ticket-list td {
+  padding: 0 0.25rem;
+  font-weight: 400;
+}
+
+.ticket-list th {
+  min-width: 4.5rem;
+  text-align: right;
+}
+
+.ticket-list td {
+  text-align: left;
+}
+
 .hp-section .btn-green {
   display: inline-block;
 }
