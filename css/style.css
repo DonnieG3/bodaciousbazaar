@@ -44,6 +44,16 @@ p img {
 	margin: 0.25rem 1.25rem 0.75rem 0;
 }
 
+.mission-summary {
+	display: flow-root;
+	margin-bottom: 1.6rem;
+}
+
+.about-news-title {
+	clear: both;
+	margin-top: 2rem;
+}
+
 .bazaar-definition {
 	box-sizing: border-box;
 	width: 80%;
@@ -707,6 +717,14 @@ body.photo-lightbox-open {
     display: block;
     width: 100%;
     margin: 0 0 1rem;
+  }
+
+  .mission-summary {
+    margin-bottom: 0.6rem;
+  }
+
+  .about-news-title {
+    margin-top: 1rem;
   }
 
   .photo-section {
