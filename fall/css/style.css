@@ -358,6 +358,16 @@ h2 {
 	text-decoration: none;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.38);
 }
+.footer__email-button {
+	display: inline-block;
+	padding: 0.55rem 1rem;
+	background: #fff;
+	color: #000 !important;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 2px;
+	box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.28);
+}
 .footer__logo {
 	-webkit-column-span: all;
 	column-span: all;
