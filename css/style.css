@@ -140,8 +140,8 @@ a {
 }
 
 .body__logo img {
-	width: 45vw !important;
-	max-width: 450px !important;
+	width: 34vw !important;
+	max-width: 340px !important;
 	margin: 0 !important;
 	padding: 0 !important;
 	height: auto;
@@ -244,12 +244,13 @@ h1.page-title {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	min-height: 84px;
-	padding: 10px 84px;
+	min-height: 68px;
+	padding: 7px 76px;
 	color: #fff;
 	width: 80%;
 	max-width: 910px;
 	text-align: center;
+	margin-top: 0.9rem;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -520,8 +521,8 @@ hr {
 
   h1.page-title {
 	font-size: 1.55em;
-	min-height: 68px;
-	padding: 8px 48px;
+	min-height: 60px;
+	padding: 7px 44px;
 	width: 92%;
 	margin-top: 0.8rem;
   }
