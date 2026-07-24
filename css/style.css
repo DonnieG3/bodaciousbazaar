@@ -80,6 +80,25 @@ p img {
 	margin-bottom: 0;
 }
 
+.vendor-applications-list {
+	margin: 1.25rem 0 1.75rem;
+	padding-left: 1.4rem;
+}
+
+.vendor-applications-list li {
+	margin-bottom: 1.4rem;
+}
+
+.vendor-applications-list h2 {
+	margin-top: 0;
+}
+
+.vendor-applications-list a {
+	color: #C20014;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 a {
   text-decoration: underline;
   color: #06C;
@@ -849,6 +868,7 @@ body.photo-lightbox-open {
   .travel-options {
     margin-top: 0.75rem;
   }
+
 }
 
 /* Micro screen size*/
