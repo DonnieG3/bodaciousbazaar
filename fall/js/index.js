@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	})(jQuery);
 
-	$('[data-footer]').load('/footer.html?v=20260724-footer-contact', function() {
+	$('[data-footer]').load('/footer.html?v=20260724-mobile-social', function() {
 		$('[data-current-year]').text(new Date().getFullYear());
 		updateMobileTitle();
 	});
