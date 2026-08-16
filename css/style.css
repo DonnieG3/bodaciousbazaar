@@ -270,7 +270,7 @@ a {
 	text-align: left;
 }
 
-.vendor-list-header span:last-child {
+.vendor-list-header span + span {
 	text-align: right;
 }
 
