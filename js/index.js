@@ -40,6 +40,16 @@ $(document).ready(function(){
 	$(window).on('resize', updateMobileTitleFooter);
 	updateMobileTitleFooter();
 
+	$('.vendor-search input').on('input', function() {
+		var query = $(this).val().toLowerCase().trim();
+		var $rows = $(this).closest('.vendor-list-wrap').find('.vendor-list li');
+
+		$rows.each(function() {
+			var rowText = $(this).text().toLowerCase();
+			$(this).toggle(rowText.indexOf(query) !== -1);
+		});
+	});
+
 	var $photoLightbox = $('#photo-lightbox');
 	var $photoLightboxImage = $('.photo-lightbox__image');
 	var $galleryPhotos = $('.gallery-photo');
